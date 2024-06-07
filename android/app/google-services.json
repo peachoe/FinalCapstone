@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "554798596010",
+    "firebase_url": "https://finalcapstone-425405-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "finalcapstone-425405",
+    "storage_bucket": "finalcapstone-425405.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554798596010:android:5a7bd8984cb9656ebd75d3",
+        "android_client_info": {
+          "package_name": "com.example.smarthomeui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDECt-QBq0zf7xSDH3hTm62m6FY9-E-QdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
