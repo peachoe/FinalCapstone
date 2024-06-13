@@ -16,7 +16,7 @@
   .container { max-width: 1800px; margin: 0 auto; }
 </style>
 </head>
-<body onload="process()">
+<body>
   <header>
     <div class="navbar fixed-top">
       <div class="container">
@@ -40,9 +40,8 @@
   <script type="text/javascript">
     function startStream() {
       var img = document.getElementById("stream");
-      img.src = 'http://172.30.1.41/stream';
+      img.src = 'http://172.30.1.33/stream';
       img.style.display = 'block';
-      refreshStream();
     }
 
     function stopStream() {
@@ -51,20 +50,13 @@
       img.style.display = 'none';
     }
 
-    function refreshStream() {
-      var img = document.getElementById("stream");
-      if (img.src) {
-        img.src = 'http://172.30.1.41/stream?t=' + new Date().getTime();
-      }
-      setTimeout(refreshStream, 1000); // 1초마다 이미지 새로고침
-    }
-
     function process() {
       var dt = new Date();
       document.getElementById("time").innerHTML = dt.toLocaleTimeString();
       document.getElementById("date").innerHTML = dt.toLocaleDateString();
       setTimeout(process, 1000); // 매 초마다 시간 업데이트
     }
+    process(); // 초기 시간 및 날짜 업데이트
   </script>
 </body>
 </html>
